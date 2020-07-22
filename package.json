@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cleber-santos/Foodfy-refatorado/issues"
   },
-  "homepage": "https://github.com/cleber-santos/Foodfy-refatorado#readme"
+  "homepage": "https://github.com/cleber-santos/Foodfy-refatorado#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
