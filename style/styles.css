@@ -272,3 +272,56 @@ footer p {
     visibility: visible;
 }
 
+/* Receita */
+
+.top {
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    align-items: center;
+}
+
+.top img.imageTop {
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.top h1 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 50px;
+    color: var(--font);
+}
+
+.top p {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--font2);
+    margin-top: 4px;
+    margin-bottom: 50px;
+}
+
+.titleCook {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border: 1px red solid;
+    margin-bottom: 20px;
+}
+
+.titleCook h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: var(--font);
+}
+
+.titleCook a {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--grey);
+    border: 1px red solid;
+}
