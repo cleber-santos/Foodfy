@@ -303,10 +303,8 @@ footer p {
 }
 
 .titleCook {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    border: 1px red solid;
+    display: flex;
+    align-items: baseline;
     margin-bottom: 20px;
 }
 
@@ -323,5 +321,16 @@ footer p {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--grey);
-    border: 1px red solid;
+    margin-left: 8px;
+}
+
+.ingredients .list,
+.prepare .make {
+    margin-bottom: 39px;
+}
+
+.information .extra,
+.ingredients .list,
+.prepare .make {
+    color: var(--font3);
 }
