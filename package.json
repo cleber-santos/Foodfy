@@ -2,9 +2,9 @@
   "name": "Foodfy-refatorado",
   "version": "1.0.0",
   "description": "Refatorando o desafio Foodfy.",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/cleber-santos/Foodfy-refatorado#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
