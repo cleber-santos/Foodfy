@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    {% block head %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodfy</title>
+
+    {% endblock %}
+
+    <link rel="stylesheet" href="/style/styles.css">
+
+</head>
+<body class="{{sobre.name}}">
+    
+    <header class="head">
+        <a href="/">
+            <img src="/assets/logo.png" alt="Foodfy">
+        </a>
+        <div class="menu">
+            <a id="sobre" href="/sobre">Sobre</a>
+            <a id="receitas" href="/receitas">Receitas</a>
+        </div>  
+    </header>
+
+    {% block content %}
+
+    {% endblock%}
+
+    <footer class="footer">
+    <p>
+        &copy; Todos direitos reservados July 2020 | receitas Foodfy - by Cleber Santos with Rocketseat
+    </p>
+</footer>
+
+</body>
+</html>

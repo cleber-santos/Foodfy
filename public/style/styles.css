@@ -27,7 +27,7 @@ body {
     align-items: center;
 }
 
-body.sobre .container a#sobre,
+body.sobre a#sobre,
 body.receitas .container a#receitas {
     font-weight: bold;
 }
@@ -60,8 +60,10 @@ h3.about {
     min-width: 10px;      
 }
 
-header {
-    margin: 30px auto;
+header.head {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 940px;
     display: flex;
     margin-bottom: 30px;
 }

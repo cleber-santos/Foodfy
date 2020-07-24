@@ -26,11 +26,18 @@ server.get("/", function(req,res){
 })
 
 server.get("/sobre", function(req,res){
-    return res.render("sobre")
+    const sobre = {
+        name: "sobre",
+    }
+    return res.render("sobre", { sobre: sobre })
 })
 
 server.get("/receitas", function(req,res){
-    return res.render("receitas")
+    const receitas = {
+        name: "receitas",
+    }
+
+    return res.render("receitas", { receitas: receitas})
 })
 
 
