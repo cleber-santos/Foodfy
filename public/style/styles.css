@@ -28,7 +28,7 @@ body {
 }
 
 body.sobre a#sobre,
-body.receitas .container a#receitas {
+body.receitas a#receitas {
     font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ h3.about {
 }
 
 header.head {
-    margin-top: 10px;
+    margin-top: 31px;
     width: 100%;
     max-width: 940px;
     display: flex;
@@ -335,4 +335,8 @@ footer p {
 .ingredients .list,
 .prepare .make {
     color: var(--font3);
+}
+
+.extra {
+    margin-bottom: 50px;
 }

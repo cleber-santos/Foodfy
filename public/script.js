@@ -21,7 +21,5 @@ for (let card of cards) {
 
 }
 
-document.querySelector('.close').addEventListener("click", function() {
-    modalOverlay.classList.remove('active')
-    event.preventDefault() // evita o refresh da pagína.
-})
+
+// event.preventDefault() // evita o refresh da pagína.
