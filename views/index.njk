@@ -29,78 +29,22 @@
 
     <section class="cards">
 
-        <div class="cardindex">
-            <div class="image">
-                <img src="./assets/burger.png" alt="Burger">
-            </div>
-            <div class="title">
-                <h3>Triplo bacon burger</h3>
-            </div>
-            <div class="by">
-                <p>por Jorge Relato</p>
-            </div>
-        </div>
+        {% for item in items %}
 
         <div class="cardindex">
             <div class="image">
-                <img src="./assets/pizza.png" alt="Pizza">
+                <img src="{{item.image}}" alt="imagem de {{item.title}}">
             </div>
             <div class="title">
-                <h3>Pizza 4 estações</h3>
+                <h3>{{item.title}}</h3>
             </div>
             <div class="by">
-                <p>por Fabiana Melo</p>
+                <p>{{item.author}}</p>
             </div>
         </div>
 
-        <div class="cardindex">
-            <div class="image">
-                <img src="./assets/espaguete.png" alt="espaguete">
-            </div>
-            <div class="title">
-                <h3>Espaguete ao alho</h3>
-            </div>
-            <div class="by">
-                <p>por Júlia Kinoto</p>
-            </div>
-        </div>
+        {% endfor %}
 
-        <div class="cardindex">
-            <div class="image">
-                <img src="./assets/lasanha.png" alt="Lasanha">
-            </div>
-            <div class="title">
-                <h3>Lasanha mac n` cheese</h3>
-            </div>
-            <div class="by">
-                <p>por Juliano Vieira</p>
-            </div>
-        </div>
-
-        <div class="cardindex">
-            <div class="image">
-                <img src="./assets/doce.png" alt="Docinhos">
-            </div>
-            <div class="title">
-                <h3>Docinhos pão-do-céu</h3>
-            </div>
-            <div class="by">
-                <p>por Ricardo Golvea</p>
-            </div>
-        </div>
-
-        <div class="cardindex">
-            <div class="image">
-                <img src="./assets/asinhas.png" alt="asinhas de frango">
-            </div>
-            <div class="title">
-                <h3>Asinhas de frango ao barbecue</h3>
-            </div>
-            <div class="by">
-                <p>por Vânia Steroski</p>
-            </div>
-        </div>
-        
     </section>      
     
 </div>

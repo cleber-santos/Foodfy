@@ -6,7 +6,7 @@ const nunjucks = require('nunjucks')
 
 // criar servidor
 const server = express()
-
+const recipes = require("./data")
 
 
 // Configurar o servidor para a pasta public
@@ -22,7 +22,7 @@ nunjucks.configure("views", {
 
 // iniciar rota
 server.get("/", function(req,res){
-    return res.render("index")
+    return res.render("index", {items: recipes})
 })
 
 server.get("/sobre", function(req,res){
@@ -37,7 +37,7 @@ server.get("/receitas", function(req,res){
         name: "receitas",
     }
 
-    return res.render("receitas", { classBody: classBody})
+    return res.render("receitas", { classBody: classBody, items: recipes})
 })
 
 server.get("/recipes", function(req,res){
