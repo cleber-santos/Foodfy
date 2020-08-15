@@ -40,9 +40,15 @@ server.get("/receitas", function(req,res){
     return res.render("receitas", { classBody: classBody, items: recipes})
 })
 
-server.get("/recipes", function(req,res){
+server.get("/recipes/:index", function(req,res){
 
-    return res.render("recipes")
+    const recipes = []
+
+    const recipeIndex = req.params.index
+
+    console.log(recipes[recipeIndex])
+
+    return res.render("recipes", {items: recipes})
 })
 
 
