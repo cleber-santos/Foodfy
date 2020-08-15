@@ -42,13 +42,11 @@ server.get("/receitas", function(req,res){
 
 server.get("/recipes/:index", function(req,res){
 
-    const recipes = []
+    // const recipes = []
 
     const recipeIndex = req.params.index
 
-    console.log(recipes[recipeIndex])
-
-    return res.render("recipes", {items: recipes})
+    return res.render("recipes", {item: recipes[recipeIndex]})
 })
 
 

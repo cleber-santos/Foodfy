@@ -341,3 +341,7 @@ footer p {
 .extra {
     margin-bottom: 50px;
 }
+
+.list, .make{
+    line-height: 25px;
+}

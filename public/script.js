@@ -1,10 +1,10 @@
 
 const cards = document.querySelectorAll('.card')
 
-for (let card of cards) {
+for (let i = 0; cards.length; i++) {
 
-    card.addEventListener("click", function(){
-        window.location.href = `/recipes/${card}`
+    cards[i].addEventListener("click", function(){
+        window.location.href = `/recipes/${i}`
     })
 
 }

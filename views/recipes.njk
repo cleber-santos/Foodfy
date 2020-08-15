@@ -11,7 +11,7 @@
 <div class="container">
 
     <div class="top">
-        <img src="{{item.image}}" class="imageTop" alt="">
+        <img src={{item.image}} class="imageTop" alt="{{item.title}}">
         <h1>{{item.title}}</h1>
         <p>{{item.author}}</p>
     </div>
@@ -24,15 +24,11 @@
         </div>
 
         <div class="list">
-            {{item.ingredients}}
-            {# <ul>
-                <li>3 kg de carne moída (escolha uma carne magra e macia);</li>
-                <li>300 g de bacon moído;</li>
-                <li>1 ovo;</li>
-                <li>3 colheres (sopa) de farinha de trigo;</li>
-                <li>3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador;</li>
-                <li>30 ml de água gelada;</li>
-            </ul> #}
+            {% for ingredients in item.ingredients %}
+            
+            <li>{{ingredients}}</li>
+
+            {% endfor %}
         </div>
 
     </div>
@@ -45,7 +41,9 @@
         </div>
 
         <div class="make">
-            {{item.preparation}}
+            {% for preparation in item.preparation %}
+            <p>{{preparation}}</p>
+            {% endfor %}
         </div>
 
     </div>
