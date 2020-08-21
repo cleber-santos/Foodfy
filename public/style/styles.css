@@ -57,7 +57,7 @@ h3.about {
 .container {
     margin: 0px auto;
     max-width: 940px;
-    min-width: 10px;      
+    min-width: 10px;
 }
 
 header.head {
@@ -318,13 +318,17 @@ footer p {
     color: var(--font);
 }
 
-.titleCook a {
+.titleCook button {
     font-size: 12px;
     line-height: 14px;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--grey);
     margin-left: 8px;
+    border: none;
+    background: none;
+    /* pointer-events: none; */
+    cursor: pointer;
 }
 
 .ingredients .list,
