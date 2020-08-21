@@ -20,17 +20,17 @@
         
         <div class="titleCook">
             <h2>Ingredientes</h2>
-            <button class="btn-toggle">Esconder</button>
+            <button >Esconder</button>
         </div>
 
         
-        <div class="list content show">
+        {# <div class="list" >
             {% for ingredients in item.ingredients %}
             
                 <li>{{ingredients}}</li>
 
             {% endfor %}
-        </div>
+        </div> #}
 
     </div>
 
@@ -38,14 +38,14 @@
 
         <div class="titleCook">
             <h2>Modo de preparo</h2>
-            <button class="btn-toggle">Esconder</button>
+            <button >Esconder</button>
         </div>
 
-        <div class="make">
+        {# <div class="make">
             {% for preparation in item.preparation %}
             <p>{{preparation}}</p>
             {% endfor %}
-        </div>
+        </div> #}
 
     </div>
 
@@ -53,17 +53,17 @@
 
         <div class="titleCook">
             <h2>Informações adicionais</h2>
-            <button class="btn-toggle">Esconder</button>
+            <button >Esconder</button>
         </div>
 
-        <div class="extra">
+        {# <div class="extra">
             {{item.information}}
-        </div>
+        </div> #}
 
     </div>
     
 </div>
 
-<script src="script.js"></script>
+<script src="scripts/hideShow.js"></script>
 
 {%endblock%}

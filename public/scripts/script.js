@@ -1,8 +1,6 @@
 
 const cards = document.querySelectorAll('.card')
 
-const button = document.querySelector('.btn-toggle')
-
 const content = document.querySelector('.content')
 
 for (let i = 0; cards.length; i++) {
@@ -11,10 +9,5 @@ for (let i = 0; cards.length; i++) {
         window.location.href = `/recipes/${i}`
     })
 }
-
-
-button.addEventListener('click', function(){
-
-})
 
 // event.preventDefault() // evita o refresh da pagína.
