@@ -281,3 +281,13 @@ footer p {
 .list, .make{
     line-height: 25px;
 }
+
+/* Show and hidden */
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
