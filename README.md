@@ -71,7 +71,7 @@ $ npm start
 
 ## :film_strip: Demonstração
 
-![gif]()
+![gif](https://github.com/cleber-santos/Foodfy-refatorado/blob/master/public/assets/Foodfy.gif)
 
 ---
 
