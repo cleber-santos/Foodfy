@@ -13,7 +13,7 @@
 <p align="center">
 
   <a href="https://github.com/cleber-santos">
-    <img alt="Made by Cleber" src="https://img.shields.io/badge/Made%20by-Cleber-orange?style=flat&logo=github">
+    <img alt="Made by Cleber Santos" src="https://img.shields.io/badge/Made%20by-Cleber Santos-orange?style=flat&logo=github">
   </a>
   <a href="https://www.linkedin.com/in/cleber-rodrigo-santos/">
     <img alt="Made by Cleber" src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue">
