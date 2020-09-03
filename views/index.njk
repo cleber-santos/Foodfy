@@ -33,7 +33,7 @@
 
             {% if loop.index <= 6 %} {# o loop.index mostrara apenas as 6 primeiras receitas do data.js #}
 
-            <div class="cardindex">
+            <div class="card">
                 <div class="image">
                     <img src="{{item.image}}" alt="imagem de {{item.title}}">
                 </div>
@@ -52,5 +52,7 @@
     </section>      
     
 </div>
+
+<script src="scripts/script.js"></script>
 
 {% endblock %}
