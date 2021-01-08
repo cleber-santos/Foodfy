@@ -55,13 +55,13 @@ Obs.: O projeto foi convertido em node.js usando o nunjucks.
 
 ## :gear: Como usar
 ```bash
-# Clone este repositorio
-$ git clone https://github.com/cleber-santos/Foodfy-refatorado.git
+# Clone este repositório
+$ git clone https://github.com/cleber-santos/Foodfy.git
 
-# Va até o repositorio
-$ cd Foodfy-refatorado
+# Va até o repositório
+$ cd Foodfy
 
-# Instale as depedencias do projeto
+# Instale as dependências do projeto
 $ npm install
 
 # Rode o servidor
