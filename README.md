@@ -42,10 +42,10 @@ Neste desafio foi refatorado o projeto Foodfy, usando o nunjucks como template e
 - [x] Na página com detalhes da receita, foi adicionado um botão para mostrar/esconder detalhes.
 
 ##### Admin:
-- [] criar rotas para uma área administrativa.
-- [] Utilize um arquivo que levará o nome data.json, porém, mantenha a estrutura de dados que foi feito no arquivo: data.js.
-- [] Os campos de "Ingredientes" e "Modo de preparo", serão campos dinâmicos, onde você irá adicionar quantos campos forem necessários, usando JavaScript.
-- [] Altere as rotas desenvolvidas no desafio anterior para exibir as receitas do novo arquivo data.json para o nosso site do Foodfy.
+- [ ] criar rotas para uma área administrativa.
+- [ ] Utilize um arquivo que levará o nome data.json, porém, mantenha a estrutura de dados que foi feito no arquivo: data.js.
+- [ ] Os campos de "Ingredientes" e "Modo de preparo", serão campos dinâmicos, onde você irá adicionar quantos campos forem necessários, usando JavaScript.
+- [ ] Altere as rotas desenvolvidas no desafio anterior para exibir as receitas do novo arquivo data.json para o nosso site do Foodfy.
 
 Obs.: O projeto foi convertido em node.js usando o nunjucks.  
 
