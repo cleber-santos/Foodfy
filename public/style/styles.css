@@ -29,7 +29,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
 body.sobre a#sobre,
@@ -65,12 +65,11 @@ h3.about {
     min-width: 10px;
 }
 
-header.head {
-    margin-top: 31px;
+.head {
+    margin: 30px auto 30px auto;
     width: 100%;
     max-width: 940px;
     display: flex;
-    margin-bottom: 30px;
 }
 
 .head a img {
@@ -87,14 +86,33 @@ header.head {
     font-size: 16px;
     color: var(--font);
     line-height: 19px;
+    position: relative;
 }
 
-.head .menu a:hover {
+.menu a.active{
     font-weight: bold;
-    border-bottom: 2px solid #d64e45;
-    opacity: 0.7;
-    transition: 0.3s;
 }
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+.menu a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color:#d64e45;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.menu a:hover::after{
+    width: 100%;
+    transition: width 300ms ease-in-out;
+}
+
+
 
 .banner {
     width: 940px;
@@ -135,13 +153,6 @@ header.head {
     margin-right: 100px;
 }
 
-.mostAccessed {
-    font-size: 24px;
-    line-height: 28px;
-    color: var(--font);
-    font-weight: bold;
-    margin-bottom: 20px;
-}
 
 .cards {
    display: grid;
@@ -295,4 +306,81 @@ footer p {
 
 .show{
     display: block;
+}
+
+/* Admin */
+
+/* head admin */
+
+.headAdmin {
+    height: 80px;
+    align-items: center;
+    margin: 0px 0px 30px 0px;
+    background-color: #111111;
+    width: 100%;
+    display: flex;    
+}
+
+.headAdmin .logoAdmin{
+    margin: 0px auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 940px;
+}
+
+.headAdmin a img {
+    width: 91px;
+    height: 27px;
+}
+
+/* Criando receita */
+
+.h2Admin{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+    margin-left: 231px;
+    margin-bottom: 30px;
+}
+
+.containerForm{
+    margin: 0px auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 940px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+   
+}
+.cabecalho h3.title{
+     font-weight: bold;
+     font-size: 24px;
+     line-height: 28px;
+}
+
+.cabecalho button.save {
+    width: 139px;
+    height: 37px;
+    background-color: #6558c3;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.containerForm .item{
+    margin-bottom: 30px;
+}
+
+.containerForm .item div:nth-child(1){
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-bottom: 10px;
 }

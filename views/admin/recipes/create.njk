@@ -1,0 +1,46 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block head%}
+
+<title>Criando receita</title>
+
+{% endblock %}
+
+{% block content%}
+
+<div class="containerForm">
+
+    <div class="cabecalho">
+        <h3 class="title">Criando receita</h3>
+        <button type="button" class="save">Salvar receita</button>
+    </div>
+
+    <div class="item">
+        <div>Imagen da receita</div>
+        <div>https://teste</div>
+    </div>
+
+    <div id="ingredients" class="item">
+        <div>Ingredientes</div>
+        <div class="ingredient">
+            <input type="text" name="ingredients[]" value="" placeholder="Adicionar ingredientes" />
+        </div>
+    <button type="button" class="add-ingredient">Adicionar novo preparo</button>
+    </div>
+
+    <div id="preparation" class="item">
+        <div>Modo de preparo</div>
+        <div class="preparation">
+            <input type="text" name="preparation[]" value="" placeholder="adicionar passo de preparo" />
+        </div>
+    <button type="button" class="add-preparation">adicionar novo passo</button>
+    </div>
+
+    <div class="item">
+        <div>Informações adicionais</div>
+        <div>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres.</div>
+    </div>
+   
+</div>
+
+{% endblock %}

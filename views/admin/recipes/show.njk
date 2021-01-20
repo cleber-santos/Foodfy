@@ -1,0 +1,69 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block head%}
+
+<title>Foodfy | Receita</title>
+
+{% endblock %}
+
+{% block content%}
+
+<div class="container">
+
+    <div class="top">
+        <img src={{item.image}} class="imageTop" alt="{{item.title}}">
+        <h1>{{item.title}}</h1>
+        <p>{{item.author}}</p>
+    </div>
+
+    <div class="ingredients">
+        
+        <div class="titleCook">
+            <h2>Ingredientes</h2>
+            <button>Esconder</button>
+        </div>
+
+        
+        <div class="list content show">
+            {% for ingredients in item.ingredients %}
+            
+                <li>{{ingredients}}</li>
+
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div class="prepare topic">
+
+        <div class="titleCook">
+            <h2>Modo de preparo</h2>
+            <button >Esconder</button>
+        </div>
+
+        <div class="make content show">
+            {% for preparation in item.preparation %}
+            <p>{{preparation}}</p>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div class="information">
+
+        <div class="titleCook ">
+            <h2>Informações adicionais</h2>
+            <button>Esconder</button>
+        </div>
+
+        <div class="extra content show">
+            <p>{{item.information}}</p>
+        </div>
+
+    </div>
+    
+</div>
+
+<script src="/scripts/hideShow.js"></script>
+
+{%endblock%}
