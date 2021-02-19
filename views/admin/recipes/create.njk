@@ -8,39 +8,47 @@
 
 {% block content%}
 
-<div class="containerForm">
+<form class="containerForm" method="POST" action="/admin/recipes">
 
     <div class="cabecalho">
         <h3 class="title">Criando receita</h3>
-        <button type="button" class="save">Salvar receita</button>
+        <button type="submit" class="save">Salvar receita</button>
     </div>
 
     <div class="item">
-        <div>Imagen da receita</div>
-        <div>https://teste</div>
+        <div class="label">Imagen da receita</div>
+        <input type="url" name="image" placeholder="http://">
+    </div>
+
+    <div class="item">
+        <div class="label">Titulo da receita</div>
+        <input type="text" name="name" placeholder="Nome da receita">
     </div>
 
     <div id="ingredients" class="item">
-        <div>Ingredientes</div>
+        <div class="label">Ingredientes</div>
         <div class="ingredient">
             <input type="text" name="ingredients[]" value="" placeholder="Adicionar ingredientes" />
         </div>
-    <button type="button" class="add-ingredient">Adicionar novo preparo</button>
     </div>
+    <button id="add" type="button" class="add-ingredient">Adicionar novo ingrediente</button>
 
     <div id="preparation" class="item">
-        <div>Modo de preparo</div>
+        <div class="label">Modo de preparo</div>
         <div class="preparation">
             <input type="text" name="preparation[]" value="" placeholder="adicionar passo de preparo" />
         </div>
-    <button type="button" class="add-preparation">adicionar novo passo</button>
     </div>
+    <button id="add" type="button" class="add-preparation">Adicionar novo passo</button>
 
     <div class="item">
-        <div>Informações adicionais</div>
-        <div>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres.</div>
+        <div class="label">Informações adicionais</div>
+        <textarea name="infoAdd" id="" cols="30" rows="10"></textarea>
+        {# <input type="text" name="infoAdd" placeholder="Informações adicionais"> #}
     </div>
    
-</div>
+</form>
+
+<script src="/scripts/add.js"></script>
 
 {% endblock %}

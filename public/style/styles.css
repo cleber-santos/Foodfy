@@ -333,22 +333,48 @@ footer p {
     height: 27px;
 }
 
-/* Criando receita */
-
-.h2Admin{
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #111111;
-    margin-left: 231px;
-    margin-bottom: 30px;
-}
+/* Criando receita FORM*/
 
 .containerForm{
     margin: 0px auto;
     padding: 10px;
     width: 100%;
     max-width: 940px;
+}
+
+form.containerForm .item input {
+    width: 900px;
+    height: 49px;
+    background: #ffffff;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #111111;
+    padding: 0px 20px;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+}
+
+textarea {
+    width: 900px;
+    height: 257px;
+    background: #ffffff;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #111111;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 20px;
+    margin-top: 10px;
+}
+
+.h2Admin {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+    margin-left: 231px;
+    margin-bottom: 30px;
 }
 
 .cabecalho{
@@ -374,13 +400,28 @@ footer p {
     font-weight: bold;
 }
 
-.containerForm .item{
-    margin-bottom: 30px;
-}
-
 .containerForm .item div:nth-child(1){
     font-size: 16px;
     font-weight: bold;
     line-height: 19px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+button#add {
+    margin-top: 15px;
+}
+
+button[type="button"]{
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6558c3;
+    background:none;
+}
+
+button[type="button"]:hover {
+    cursor: pointer;
+    color: #463c91;
+    transition: 0.5s;
 }

@@ -1,5 +1,6 @@
 const express = require('express')
 const routes = express.Router()
+const recipes = require('./recipes')
 
 //HOME
 
@@ -24,6 +25,9 @@ routes.get('/recipes', function(req,res) {
 routes.get('/admin/recipes/create', function (req,res) {
     return res.render("admin/recipes/create")
 })
+
+//Cadastrar nova receita
+routes.post("/admin/recipes", recipes.post)
 
 // exibir detalhes de uma receita
 routes.get('/admin/show', function(req,res) {
